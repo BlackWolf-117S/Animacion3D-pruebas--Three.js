@@ -57,7 +57,6 @@ function Scenes() {
 		// controls.target = new Vector3(0, 0, 2);
 		controls.enableDamping = true;
 
-		/*
 		//! loader
 		const loader1 = new GLTFLoader();
 		loader1.load(
@@ -68,8 +67,18 @@ function Scenes() {
 			() => {},
 			() => {}
 		);
-		*/
 
+		const loader2 = new GLTFLoader();
+		loader2.load(
+			'./model/bg3.gltf',
+			(gltf) => {
+				scene.add(gltf.scene);
+			},
+			() => {},
+			() => {}
+		);
+
+		/*
 		const loader = new TextureLoader();
 		const texture = loader.load('./textures/MapCap1.png');
 		//* Un objeto 3D es una geometria (Mesh o mallas en español) y un material
