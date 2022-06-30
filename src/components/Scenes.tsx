@@ -57,6 +57,7 @@ function Scenes() {
 		// controls.target = new Vector3(0, 0, 2);
 		controls.enableDamping = true;
 
+		/*
 		//! loader
 		const loader1 = new GLTFLoader();
 		loader1.load(
@@ -67,8 +68,8 @@ function Scenes() {
 			() => {},
 			() => {}
 		);
+		*/
 
-		/*
 		const loader = new TextureLoader();
 		const texture = loader.load('./textures/MapCap1.png');
 		//* Un objeto 3D es una geometria (Mesh o mallas en español) y un material
@@ -97,7 +98,6 @@ function Scenes() {
 		torus.scale.set(1.5, 1.5, 1.5);
 		scene.add(cube, sfera, torus);
 
-		*/
 		/*
 		//! Crear textura
 		const loader = new TextureLoader();
